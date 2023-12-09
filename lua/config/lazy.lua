@@ -23,6 +23,10 @@ require("lazy").setup {
         { import = "plugins.neo-tree" },
         -- whichkey
         { import = "plugins.whichkey" },
+        -- autocompletion
+        { import = "plugins.autocompletion" },
+        -- autopair
+        { import = "plugins.autopair" },
     },
     defaults = { lazy = true, version = nil},
     install = { missing = true },
