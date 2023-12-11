@@ -24,7 +24,7 @@ require("lazy").setup {
         -- whichkey
         { import = "plugins.whichkey" },
         -- autocompletion
-        { import = "plugins.autocompletion" },
+        -- { import = "plugins.autocompletion" },
         -- autopair
         { import = "plugins.autopair" },
     },

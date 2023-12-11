@@ -1,3 +1,4 @@
+return{}
 -- return {
 --     require("lspconfig").pyright.setup{
 --         on_attach = function ()
