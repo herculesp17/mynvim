@@ -14,10 +14,6 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
--- Toggle Comment with Leader / in visual and normal mode
-map("v", "<leader>/" , "<cmd>normal gcc<CR>", {desc = "Toggle Comment"})
-map("n", "<leader>/" , "<cmd>normal gcc<CR>", {desc = "Toggle Comment"})
-
 -- Switch between Tabs
 map("n", "<tab>" , ":tabNext <CR>")
 map("n", "<leader>c", "<cmd>tabclose<CR>" , {desc = "Close Tab"})
