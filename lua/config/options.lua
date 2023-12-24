@@ -9,6 +9,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.clipboard = "unnamedplus"
 opt.smartindent = true
+opt.autoindent = true
 -- opt.termguicolors = true
 opt.mouse = "a"
 opt.breakindent = true
@@ -18,6 +19,13 @@ opt.smartcase = true
 
 -- This is for Neorg
 opt.conceallevel = 3
+
+-- undo
+opt.undofile = true
+opt.backup = false
+
+-- autoformat
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 vim.wo.signcolumn = 'yes'
 
@@ -40,8 +48,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
-
--- undo
-opt.undofile = true
-opt.backup = false
