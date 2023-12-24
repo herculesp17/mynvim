@@ -16,6 +16,9 @@ opt.breakindent = true
 opt.ignorecase = true
 opt.smartcase = true
 
+-- This is for Neorg
+opt.conceallevel = 3
+
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
@@ -39,6 +42,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
--- undo 
+-- undo
 opt.undofile = true
 opt.backup = false
