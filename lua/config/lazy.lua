@@ -221,7 +221,12 @@ require('lazy').setup({
                 notes = "~/notes",
               },
               default_workspace = "notes",
-              open_last_workspace = true,
+              open_last_workspace = "default",
+            },
+          },
+          ["core.journal"] = {
+            config = {
+              workspace = "notes",
             },
           },
         },
